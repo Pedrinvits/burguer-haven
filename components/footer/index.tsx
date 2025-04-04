@@ -2,7 +2,7 @@ import { Input } from "../ui/input";
 
 const Footer = () => {
     return ( 
-        <footer className="p-20 w-full">
+        <footer className="p-5 sm:p-20 w-full">
         <section className="p-10 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8  bg-[#B3A0CD] rounded-2xl">
             <div className="col-span-full xl:col-span-2 leading-0.3">
                Burger Heaven

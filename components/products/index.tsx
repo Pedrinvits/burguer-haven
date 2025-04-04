@@ -4,7 +4,7 @@ import product2 from "@/public/Rectangle 17.png";
 
 const Products = () => {
   return (
-    <section className="flex sm:flex-row flex-col gap-6 justify-center items-center">
+    <section className="flex p-5 sm:p-20 sm:flex-row flex-col gap-6 justify-center items-center">
       {/* Card 1 */}
       <div className="relative">
         <Image src={product1} alt="Product 1" unoptimized />
