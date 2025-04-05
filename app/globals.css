@@ -120,14 +120,18 @@
   body {
     @apply bg-background text-foreground;
   }
-  /* .font-bowlby {
-    font-family: var(--font-bowlby-one);
-  } */
-
-  .text-macio { 
-    /* color: #E9E3DC; */
-
-    color: red;
-  }
   
+}
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  /*background: #374151;*/
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #D1EF53;
+  border-radius: 14px;
 }

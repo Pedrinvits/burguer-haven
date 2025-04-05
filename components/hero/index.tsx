@@ -27,6 +27,7 @@ const Hero = () => {
             alt="Hamburgers"
             width={120}
             height={120}
+            unoptimized
             className="z-0 opacity-90 relative left-8 md:left-[100px] md:w-[300px] md:h-[300px]"
           />
           <Image
@@ -34,6 +35,7 @@ const Hero = () => {
             alt="Hamburgers"
             width={160}
             height={160}
+            unoptimized
             className="z-10 md:w-[400px] md:h-[400px]"
           />
           <Image
@@ -41,6 +43,7 @@ const Hero = () => {
             alt="Hamburgers"
             width={120}
             height={120}
+            unoptimized
             className="z-0 opacity-90 relative -left-8 md:left-[-130px] md:w-[300px] md:h-[300px]"
           />
         </div>
@@ -52,6 +55,7 @@ const Hero = () => {
             alt="Vector Bottom Left"
             width={100}
             height={100}
+            unoptimized
             className="opacity-70"
           />
           <Image
@@ -59,6 +63,7 @@ const Hero = () => {
             alt="Vector Bottom Right"
             width={100}
             height={100}
+            unoptimized
             className="opacity-70"
           />
         </div>
@@ -69,6 +74,7 @@ const Hero = () => {
           alt="Vector Right"
           width={150}
           height={150}
+          unoptimized
           className="hidden md:block absolute right-10 z-20 opacity-80 top-[170px]"
         />
       </div>
