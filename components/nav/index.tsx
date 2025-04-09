@@ -7,10 +7,27 @@ import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
+import { useEffect } from "react"
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false)
-
+  useEffect(() => {
+    if (!document.startViewTransition) return;
+    
+    document.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          document.startViewTransition(() => {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          });
+        }
+      });
+    });
+  }, []);
   return (
     <nav className="p-4 flex items-center justify-between mt-3">
       <span className="text-[#E9E3DC] text-2xl cursor-pointer">Burguer</span>
@@ -18,10 +35,10 @@ export function Navbar() {
       {/* Menu Desktop */}
       <ul className="hidden md:flex space-x-4">
         <li>
-          <a href="#" className="text-[#E9E3DC]  px-1 py-3">About</a>
+          <a href="#about" className="text-[#E9E3DC]  px-1 py-3">About</a>
         </li>
         <li>
-          <a href="#" className="text-[#E9E3DC]  px-1 py-3">Menu</a>
+          <a href="#menu" className="text-[#E9E3DC]  px-1 py-3">Menu</a>
         </li>
         <li>
             <a
