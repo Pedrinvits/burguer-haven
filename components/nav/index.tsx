@@ -64,8 +64,8 @@ export function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="pt-10 bg-[#D1EF53]">
-            <MobileLink href="#" onOpenChange={setOpen} className="text-black">About</MobileLink>
-            <MobileLink href="#" onOpenChange={setOpen} className="text-black">Menu</MobileLink>
+            <MobileLink href="#about" onOpenChange={setOpen} className="text-black">About</MobileLink>
+            <MobileLink href="#menu" onOpenChange={setOpen} className="text-black">Menu</MobileLink>
             <MobileLink href="#" onOpenChange={setOpen} className="text-black">
               <span className="text-black bg-[#E9E3DC] border border-black px-4 py-2 rounded-sm block w-fit">Order Online</span>
             </MobileLink>
